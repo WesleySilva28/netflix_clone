@@ -52,6 +52,7 @@ const movies = [
     image: "https://image.tmdb.org/t/p/w600_and_h900_bestv2/cZ0d3rtvXPVvuiX22sP79K3Hmjz.jpg",
     genre: ["Fantasia"],
     description: "Um caçador de monstros, em um mundo onde o destino e a magia são forças poderosas.",
+    trailerUrl: convertToEmbedUrl("https://youtu.be/tjujvMkqWe4?si=0KcOuAuzGpXU4_yD"),
     trending: true,
   },
 ];
