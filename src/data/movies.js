@@ -4,7 +4,7 @@ const movies = [
   {
     id: 1,
     title: "Stranger Things",
-    image: "https://image.tmdb.org/t/p/w500/AoWY1gkcNzabh229Icboa1Ff0BM.jpg",
+    image: "https://image.tmdb.org/t/p/w600_and_h900_bestv2/olAK0DWZmTpqRTRyNpqFUxKGbw6.jpg",
     genre: ["Terror"],
     description: "Quando uma criança desaparece, uma pequena vila se depara com forças sobrenaturais assustadoras e um mistério que liga o paranormal ao governo.",
     trailerUrl: convertToEmbedUrl("https://youtu.be/RMmGQNNl164?si=rfkPP-UZAOaAun2j"),
