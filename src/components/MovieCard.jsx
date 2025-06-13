@@ -1,20 +1,28 @@
 import React from "react";
-import { Link } from "react-router-dom";
+import { useNavigate } from "react-router-dom";
 
 function MovieCard({ movie }) {
+  const navigate = useNavigate();
+
   return (
-    <Link to={`/filme/${movie.id}`}>
-      <div className="min-w-[180px] bg-gray-800 rounded-md overflow-hidden cursor-pointer hover:scale-105 hover:z-10 transform transition duration-300 ease-in-out shadow-lg">
-        <img
-          src={movie.image}
-          alt={movie.title}
-          className="w-full h-60 object-cover"
-        />
-        <div className="p-2">
-          <h3 className="text-sm font-semibold">{movie.title}</h3>
-        </div>
+    <div
+      className="relative group transition-transform duration-300 transform hover:scale-110 cursor-pointer"
+      style={{ minWidth: "150px" }}
+      onClick={() => navigate(`/filme/${movie.id}`)}
+    >
+      <img
+        src={movie.image}
+        alt={movie.title}
+        className="w-full h-auto rounded-md"
+      />
+      <div
+        className="absolute inset-0 bg-black bg-opacity-70 text-white opacity-0 group-hover:opacity-100 
+                   transition-opacity duration-300 p-2 rounded-md flex flex-col justify-end"
+      >
+        <h3 className="text-sm font-semibold">{movie.title}</h3>
+        <p className="text-xs mt-1">{movie.description?.slice(0, 60)}...</p>
       </div>
-    </Link>
+    </div>
   );
 }
 

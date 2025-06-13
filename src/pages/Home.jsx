@@ -2,6 +2,7 @@ import React, { useState } from "react";
 import GenreFilter from "../components/GenreFilter";
 import MovieRow from "../components/MovieRow";
 import AdBanner from "../components/AdBanner";
+import HeroBanner from "../components/HeroBanner"; // ✅ importado corretamente
 import movies from "../data/movies";
 
 const genres = ["Todos", "Em alta", "Ação", "Drama", "Fantasia", "Terror", "Crime"];
@@ -32,6 +33,7 @@ function Home({ search }) {
 
   return (
     <div className="bg-black min-h-screen text-white">
+      <HeroBanner /> {/* ✅ Adicionado corretamente */}
       <GenreFilter currentGenre={currentGenre} setCurrentGenre={setCurrentGenre} />
 
       <AdBanner />
