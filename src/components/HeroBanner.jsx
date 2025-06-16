@@ -8,7 +8,7 @@ function HeroBanner() {
 
   return (
     <div
-      className="relative h-[250px] md:h-[300px] bg-cover bg-center flex items-end p-4"
+      className="relative h-[600px] md:h-[675px] bg-cover bg-center flex items-end p-4"
       style={{ backgroundImage: `url(${movie.banner || movie.image})` }}
     >
       <div className="bg-black bg-opacity-60 p-4 rounded max-w-lg">
